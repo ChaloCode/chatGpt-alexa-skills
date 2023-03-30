@@ -1,0 +1,72 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "domingo de programación",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CustomLanguageIntent",
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "hola chalo {language}",
+            "hola ChatGPT {language}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CustomLanguageIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "language",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.46540233493.1264692127471"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.46540233493.1264692127471",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "No le entiendo que estas preguntando, recuerda decir, hola Chalo y depues la pregunta"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "6"
+}
