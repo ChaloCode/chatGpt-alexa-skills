@@ -5,3 +5,8 @@
 ## Video explicación - youtube
 
 [![chaloCode video](youtube.png)](https://youtu.be/v48RS6FuB_M)
+
+## POSTMAN - EJEMPLO
+
+[![chaloCode postman](postman2.png)]
+[![chaloCode postman](postman1.png)]
